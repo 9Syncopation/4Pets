@@ -1,0 +1,25 @@
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+
+}
+.navigation{
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: flex-end;
+}
+.navHeader ul {
+    list-style: none;
+    
+}
+
+

@@ -2,4 +2,7 @@
     "cSpell.words": [
         "fontawesome"
     ]
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+     }
 }
