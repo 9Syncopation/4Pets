@@ -1,6 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 import url from '../Utils/ApiCats'
+import {UsersPets} from '../Utils/UsersPetsHelper'
+
 
 
 export const PetsContext = React.createContext();
@@ -17,14 +19,16 @@ export const PetsContext = React.createContext();
 export default function PetsProvider({children}) {
     const [ loading , setLoading] = React.useState(false);
     const [ pets , setPets] = React.useState([]);
-    const [ userPets, setUserPets] = React.useState([]);
+    const [ usersPets, setUsersPets] = React.useState([]);
 
 React.useEffect(() => {
     setLoading(true);
 //TODO change this to PetsPage 
     axios.get(`${url}/products`)
     .then(response => {
+        const usersOwnedPets = UsersPets(response.data);
         setPets(response.data)
+        setUsersPets(usersOwnedPets)
         setLoading(false);
     },)
     // Cleanup Function
@@ -33,7 +37,7 @@ React.useEffect(() => {
     },[])
 
         return (
-        <PetsContext.Provider value ={{ loading, pets, userPets}}>
+        <PetsContext.Provider value ={{ loading, pets, usersPets}}>
         {children}
         </PetsContext.Provider>
     )

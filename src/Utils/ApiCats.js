@@ -1,6 +1,6 @@
 ///Url
 
-export default "https://johnsmilgatutorials.com/projects/react-tech-store-v2"
+export default "https://cataas.com/cat"
 // install axios
 //get from url
 //response
