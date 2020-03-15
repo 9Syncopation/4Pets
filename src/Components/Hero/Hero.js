@@ -9,7 +9,6 @@ export default function Hero({ children }) {
         <p>Embrace Your best friend</p>
         {children}
       </div>
-      Hello Hero
-    </div>
+     </div>
   );
 }
