@@ -24,10 +24,7 @@ function App() {
   return (
     <>
       <Header />
-      <Navbar />
-      <Sidebar />
-      <Footer />
-      <SideUserPets />
+      
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/About" component={About} />

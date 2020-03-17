@@ -9,5 +9,5 @@ export default function UsersPets() {
     if(loading){
         return <LoadingGif/>
     }
-    return <PetsList title = "Users Pets" pets={usersPets}/>
+    return <PetsList title = "Users/Adopted Pets" pets={usersPets}/>
 }
