@@ -6,8 +6,10 @@ export default function PetsCard({ image, title, id, price }) {
   const url = image.url;
   return (
     <article className="product">
-      <div className="ing-container">
+      <div className="img-container">
         <img src={url} alt={title} />
+        <img src={`http://placekitten.com/200/${id}00`} alt="imag"/>
+        <img src={"../../"} alt="imag"/>
         <Link
           to={`SinglePetPage/${id}`}
           className="btn btn-primary product-link"> Details</Link>

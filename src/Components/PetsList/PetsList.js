@@ -4,7 +4,7 @@ import PetsCard from '../PetsCard/PetsCard';
 export default function PetsList({title, pets}) {
     return <section className="section">
     <h2 className="section-title"> {title}</h2>
-    <div className="pets-center">
+    <div className="products-center">
         {pets.map(item => {
            return <PetsCard key= {item.id} {...item}/>
         })}

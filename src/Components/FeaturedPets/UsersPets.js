@@ -7,7 +7,7 @@ import LoadingGif from '../Loading/Loading'
 export default function UsersPets() {
     const {loading, usersPets} = React.useContext(PetsContext)
     if(loading){
-        return <loading/>
+        return <LoadingGif/>
     }
     return <PetsList title = "Users Pets" pets={usersPets}/>
 }

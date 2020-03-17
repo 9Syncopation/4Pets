@@ -5,10 +5,10 @@ import "./Header.css";
 
 export default function Header() {
   return (
-    <header className=" header">
+    <header className="header">
       <img src={logo} alt="LOGO" className="logo" />
-      <nav className="navHeader">
-        <ul className="navigation">
+      <nav >
+        <ul >
           <div>
             <li>
               <Link to="/"> Home</Link>
