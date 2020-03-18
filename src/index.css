@@ -312,7 +312,7 @@ Product List
   box-shadow: var(--darkShadow);
 }
 .img-container {
-  padding: 3rem;
+  padding: 1rem;
   background: rgba(255, 255, 255, 0.5);
   position: relative;
   height: 5rem;
@@ -322,7 +322,7 @@ Product List
   transition: var(--mainTransition);
   /* min-height: 9rem; */
   height: 16rem;
-  margin-top: 7rem;
+  margin-top: 5rem;
 }
 
 .product:hover img {
