@@ -7,9 +7,14 @@ export default function HomePage() {
   return (
     <>
       <Hero>
-        <Link to="PetsPage" className="btn hero-btn">
+        <Link to="PetsPage" className="btn btn-hero">
           {" "}
           Find Your loved Cat
+        </Link>
+        <br/>
+        <Link to="PetsPage" className="btn btn-hero">
+          {" "}
+          More Of a Dog Person?
         </Link>
       </Hero>
       <UsersPets></UsersPets>

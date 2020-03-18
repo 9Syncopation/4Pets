@@ -12,21 +12,22 @@ export default function SinglePetPage() {
     if(pets.length === 0 ){
         return <Loading/>
     }else{
-        const {image, name, description, shelterDescription} = pet
+        const {image, name, gender, description, shelterDescription} = pet
         console.log('strapi pets', pet);
         
         return (
             <section className="single-product">
-                <img src={image} alt={name} className="single-product-image"/>
+        {/* <img src={image} alt={name} className="single-product-image"/>*/}
                 <img src={`http://placekitten.com/200/${id}00`} alt={name} className="single-product-image"/>
                 <article>
                 <h1> {name}</h1>
-                <h2> {description}</h2>
-                <p>{shelterDescription}</p>
+                <h3> {gender}</h3>
+                <h6> {description}</h6>
+                <p><strong><h3>Our Shelter:</h3></strong>{shelterDescription}</p>
                 <button className="btn btn-primary btn-block" onClick ={
                     ()=> {
                         //go to transaction, details, agreement
-                        history.push('/cart')
+                        history.push('/login')
                     }
                 }>Adopt//Support </button>
                 </article>

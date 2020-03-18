@@ -20,21 +20,21 @@ export default function Header() {
             </li>
           </div>
           <div>
+          <li>
+          <Link to="/PetsPage"> All Pets</Link>
+          </li>
+          </div>
+          <div>
+          <li>
+          <Link to="/UserPets"> My Pets</Link>
+          </li>
+          </div>
+          <div>
             <li>
               <Link to="/ContactPage"> Contact</Link>
             </li>
           </div>
-          <div>
-            <li>
-              <Link to="/PetsPage"> All Pets</Link>
-            </li>
-          </div>
-          <div>
-            <li>
-              <Link to="/UserPets"> My Pets</Link>
-            </li>
-          </div>
-        </ul>
+          </ul>
       </nav>
     </header>
   );

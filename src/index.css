@@ -151,10 +151,9 @@ Header
 ======
 */
 .header {
-  padding: 2rem 0;
+ 
 }
 .logo {
-  margin: 0 auto;
   width: 9rem;
 }
 .header ul {
@@ -220,10 +219,15 @@ Hero
 .btn-hero {
   border-radius: 0;
   font-weight: bold;
+  /* font-size: 2.5rem !important; */
   padding: 0.8rem 1.5rem;
+  color: black !important;
   background: var(--primaryDarkColor);
   border-color: var(--primaryDarkColor);
   color: var(--mainBlack);
+  background-color:rgba(214, 114, 47, 0.16) !important;
+  margin: 5px;
+  
 }
 .btn-hero:hover {
   color: var(--primaryDarkColor);
@@ -376,6 +380,9 @@ Single Product
 }
 .single-product-image {
   max-width: 25rem;
+  max-height: 30rem;
+  width: auto;
+  height: auto;
   align-self: center;
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -506,7 +513,7 @@ Login Form
   width: 100%;
   border: none;
   border-bottom: 2px solid var(--darkGrey);
-  margin-bottom: 1.25rem;
+  /* margin-bottom: 1.25rem; */
   padding: 0.5rem;
   font-size: 1.2rem;
 }
