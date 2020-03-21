@@ -33,7 +33,7 @@ export default function PetsCard({ image, name, gender, id, description }) {
     <CardActionArea>
       <CardMedia
         className={classes.media}
-        image={`http://placekitten.com/200/${id}00`}
+        image={`/Assets/Img/Cats/${id}.jpg`}
         title={name}
       />
       <CardContent>

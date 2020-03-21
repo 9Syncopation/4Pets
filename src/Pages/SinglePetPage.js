@@ -18,7 +18,7 @@ export default function SinglePetPage() {
         return (
             <section className="single-product">
         {/* <img src={image} alt={name} className="single-product-image"/>*/}
-                <img src={`http://placekitten.com/200/${id}00`} alt={name} className="single-product-image"/>
+                <img src={`/Assets/Img/Cats/${id}.jpg`} alt={name} className="single-product-image"/>
                 <article>
                 <h1> {name}</h1>
                 <h3> {gender}</h3>
