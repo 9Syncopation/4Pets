@@ -27,7 +27,7 @@ export default function SinglePetPage() {
                 <button className="btn btn-primary btn-block" onClick ={
                     ()=> {
                         //go to transaction, details, agreement
-                        history.push('/login')
+                        history.push('/cart')
                     }
                 }>Adopt//Support </button>
                 </article>

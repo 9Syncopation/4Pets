@@ -5,12 +5,15 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router } from "react-router-dom";
 import PetsProvider from "./Context/PetsContext";
+import {CartProvider} from './Context/CartContext'
 
 ReactDOM.render(
   <PetsProvider>
+  <CartProvider>
     <Router>
       <App />
     </Router>
+  </CartProvider>
   </PetsProvider>,
   document.getElementById("root")
 );

@@ -38,6 +38,11 @@ export default function Header() {
               </div>
               <div>
                 <li>
+                  <Link to="/CartPage"> Cart</Link>
+                </li>
+              </div>
+              <div>
+                <li>
                   <Link to="/Login"> Login</Link>
                 </li>
               </div>

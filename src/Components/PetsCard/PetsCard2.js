@@ -13,6 +13,7 @@ export default function PetsCard({ image, name, gender, id, description }) {
       <p className="product-title card-title">{name}</p>
      
         {/*<img src={image} alt={name} />*/}
+        {/* TODO fix bug of img from server */}
         <img src={`http://placekitten.com/200/${id}00`} alt="imag" className="img-card"/>
         {/*<img src={"../../"} alt="imag"/> */}
         <Link

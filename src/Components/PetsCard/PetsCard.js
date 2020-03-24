@@ -23,7 +23,7 @@ const useStyles = makeStyles({
 export default function PetsCard({ image, name, gender, id, description }) {
   const classes = useStyles();
 
-  //TODO set up the card properly
+  //TODO set up the card property - like, viewed etc.
   // const url = image.url;
   console.log('image extraction',image);
   
