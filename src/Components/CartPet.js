@@ -3,9 +3,9 @@ import {FaAngleUp, FaAngleDown} from 'react-icons/fa'
 import {CartContext} from '../Context/CartContext'
 
 
-export default function CartPet({id, image, title, price, amount}) {
+export default function CartPet({id, image, name, gender, amount}) {
     console.log('image', image);
-    console.log('title', title);
+    console.log('title', name);
     
     //cart context
    /*TODO change the items and the cart to adoped bought pets*/
@@ -13,10 +13,10 @@ export default function CartPet({id, image, title, price, amount}) {
     const {removeItem, increaseAmount, decreaseAmount} = React.useContext(CartContext)
     return(      
     <article className="cart-item">
-           <img src ={image} alt= {title}/>
+           <img src ={`/Assets/Img/Cats/${id}.jpg`} alt= {name}/>
            <div>
-           <h4>{title}</h4>
-           <h5>{price}</h5>
+           <h3>{name}</h3>
+           <h5>{gender}</h5>
            <button type ="button" className= "cart-btn remove-btn" onClick= {()=>{
                 removeItem(id)
             }}> Remove</button>

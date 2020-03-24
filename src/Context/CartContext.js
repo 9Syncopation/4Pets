@@ -1,13 +1,17 @@
 import React from 'react';
-import LocalCart from '../Utils/LocalCart'
+// import LocalCart from '../Utils/LocalCart'
+// import {PetsContext} from './PetsContext'
 
 const CartContext = React.createContext();
 
 function CartProvider ({children}) {
-    const [cart, setCart ] =React.useState(LocalCart)
+    // const {pets} = React.useContext(PetsContext)
+    const [cart, setCart ] =React.useState([])
     const [total, setTotal] = React.useState(0)
     const [cartItem , setCartItems] = React.useState(0)
-
+    // console.log('cart***!!!',cart);
+    // console.log('pets***!!!',pets);
+    
     //useEffect to watch changes at the cart
     React.useEffect(()=>{
         //Local storage
@@ -21,7 +25,8 @@ function CartProvider ({children}) {
         console.log('cart item',newCartItems)
         //Cart total
         let newTotal =cart.reduce((total, cartItems)=>{
-            return total+= (cartItems.amount * cartItems.price)
+            return total+= (cartItems.amount )
+            // return total+= (cartItems.amount * cartItems.price)
         },0)
         console.log('newTotal', newTotal);
         // to  2 decimals
@@ -29,7 +34,7 @@ function CartProvider ({children}) {
         setTotal(newTotal)
                 
         // only Run When something updated at the Cart
-},[cart])
+        },[cart])
     //remove item
     //filter the cart and return only one does not match the id
     const removeItem = id =>{
@@ -61,11 +66,19 @@ function CartProvider ({children}) {
         setCart(newCart)
     }}
     //add  to cart
-    const addToCart = pets =>{
-        console.log('pets', pets);
-        
-        
-    }
+    const addToCart = pet =>{
+        const {id, name , gender}= pet
+        const item = [...cart].find(item => item.id === id)
+        if(item){
+            increaseAmount(id)
+            return
+        }else{
+            const newItem = {id, name, gender,amount:1}
+            const newCart = [...cart, newItem]
+            setCart(newCart)
+            console.log('newCart', newCart);
+        }
+        }
     //clear cart
     const clearCart = () =>{
         setCart([])
