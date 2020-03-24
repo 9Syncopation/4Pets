@@ -11,7 +11,7 @@ import PetsPage from "./Pages/PetsPage";
 import SinglePetPage from "./Pages/SinglePetPage";
 import UserPets from "./Pages/UserPets";
 import Default from "./Pages/Default";
-import Login from "./Pages/Login";
+import Login from "./Pages/LoginPage";
 import Error from "./Pages/Error";
 import Cart from "./Pages/CartPage";
 import Checkout from "./Pages/CheckoutPage";
@@ -41,7 +41,7 @@ function App() {
         <Route path="/CartPage" component={Cart} />
         <Route path="/CheckoutPage" component={Checkout} />
         <Route path="/Default" component={Default} />
-        <Route path="/Login" component={Login} />
+        <Route path="/LoginPage" component={Login} />
         <Route path="*" component={Error} />
       </Switch>
     </>

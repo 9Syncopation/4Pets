@@ -26,7 +26,7 @@ export default function Cart() {
           checkout
         </Link>
       ) : (
-        <Link to="/Login" className="btn btn-primary btn-block">
+        <Link to="/LoginPage" className="btn btn-primary btn-block">
           Login
         </Link>
       )}

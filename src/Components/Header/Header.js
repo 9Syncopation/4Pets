@@ -43,7 +43,7 @@ export default function Header() {
               </div>
               <div>
                 <li>
-                  <Link to="/Login"> Login</Link>
+                  <Link to="/LoginPage"> Login</Link>
                 </li>
               </div>
             </div>

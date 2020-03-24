@@ -24,7 +24,7 @@ export default function PetsCard({ image, name, gender, id, description }) {
   const classes = useStyles();
 
   //TODO set up the card property - like, viewed etc.
-  // const url = image.url;
+  const url = image;
   console.log('image extraction',image);
   
   return (
@@ -33,7 +33,7 @@ export default function PetsCard({ image, name, gender, id, description }) {
     <CardActionArea>
       <CardMedia
         className={classes.media}
-        image={`/Assets/Img/Cats/${id}.jpg`}
+        image={url}
         title={name}
       />
       <CardContent>
