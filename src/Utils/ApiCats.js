@@ -1,7 +1,7 @@
 
 
 ///Url
-export  const url = "http://localhost:1337/pets"
+export  const url = "http://localhost:1337"
 
 
 // flatten 

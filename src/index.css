@@ -513,9 +513,10 @@ Login Form
   width: 100%;
   border: none;
   border-bottom: 2px solid var(--darkGrey);
-  /* margin-bottom: 1.25rem; */
+  margin-bottom: 1.25rem;
   padding: 0.5rem;
   font-size: 1.2rem;
+  
 }
 .form-empty,
 .stripe-errors {

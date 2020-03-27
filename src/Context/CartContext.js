@@ -13,6 +13,7 @@ function CartProvider ({children}) {
     const [total, setTotal] = React.useState(0)
     const [cartItem , setCartItems] = React.useState(0)
     console.log('cart context ***!!!',cart);
+    console.log('cart context Items ***!!!',cartItem);
     // console.log('pets***!!!',pets);
     
     //useEffect to watch changes at the cart

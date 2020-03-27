@@ -25,7 +25,7 @@ export default function PetsProvider({children}) {
 React.useEffect(() => {
     setLoading(true);
 //TODO change this to PetsPage 
-    axios.get(`${url}`)
+    axios.get(`${url}/pets`)
     .then(response => {
         console.log('pets response', response);
         const usersOwnedPets = UsersPets(flattenPets(response.data));

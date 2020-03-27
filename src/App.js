@@ -18,6 +18,7 @@ import Checkout from "./Pages/CheckoutPage";
 
 //Components
 import Header from "./Components/Header/Header";
+import Alert from "./Components/Alert";
 import Navbar from "./Components/Navbar";
 import Sidebar from "./Components/Sidebar";
 import SideUserPets from "./Components/SideUserPets";
@@ -27,6 +28,7 @@ function App() {
   return (
     <>
       <Header />
+      <Alert/>
       
       <Switch>
         <Route path="/" exact component={Home} />

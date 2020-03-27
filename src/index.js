@@ -6,15 +6,18 @@ import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router } from "react-router-dom";
 import PetsProvider from "./Context/PetsContext";
 import {CartProvider} from './Context/CartContext'
+import {UserProvider} from './Context/UserContext'
 
 ReactDOM.render(
+  <UserProvider>
   <PetsProvider>
   <CartProvider>
     <Router>
       <App />
     </Router>
   </CartProvider>
-  </PetsProvider>,
+  </PetsProvider>
+  </UserProvider>,
   document.getElementById("root")
 );
 
