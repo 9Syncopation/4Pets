@@ -752,6 +752,9 @@ Filters Section
   display: block;
   margin-bottom: 0.6rem;
 }
+.form-control{
+  height: 100px !important ;
+}
 .filters-form label {
   text-transform: capitalize;
   margin-bottom: 0.25rem;
