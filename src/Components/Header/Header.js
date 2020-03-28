@@ -38,7 +38,7 @@ export default function Header() {
 
              {user.token && (<div>
                     <li>
-                      <Link to="/checkout"> Checkout</Link>
+                      <Link to="/CheckoutPage"> Checkout</Link>
                     </li>
                   </div>)}
 

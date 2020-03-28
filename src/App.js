@@ -19,6 +19,7 @@ import Checkout from "./Pages/CheckoutPage";
 //Components
 import Header from "./Components/Header/Header";
 import Alert from "./Components/Alert";
+import PrivateRoute from "./Components/PrivateRoute";
 import Navbar from "./Components/Navbar";
 import Sidebar from "./Components/Sidebar";
 import SideUserPets from "./Components/SideUserPets";
@@ -41,7 +42,7 @@ function App() {
         />
         <Route path="/UserPets" component={UserPets} />
         <Route path="/CartPage" component={Cart} />
-        <Route path="/CheckoutPage" component={Checkout} />
+        <PrivateRoute path="/CheckoutPage" component={Checkout} />
         <Route path="/Default" component={Default} />
         <Route path="/LoginPage" component={Login} />
         <Route path="*" component={Error} />

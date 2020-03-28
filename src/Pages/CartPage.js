@@ -23,7 +23,7 @@ export default function Cart() {
       })}
       <h2> Total : {total} </h2>
       {user.token ? (
-        <Link to="/checkoutPage" className="btn btn-primary btn-block">
+        <Link to="/CheckoutPage" className="btn btn-primary btn-block">
           checkout
         </Link>
       ) : (
