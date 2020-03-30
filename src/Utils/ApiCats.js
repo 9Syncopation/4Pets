@@ -1,7 +1,7 @@
 
 
 ///Url
-export  const url = "http://localhost:1337"
+export  const url = "https://react-4pet-api.herokuapp.com"
 
 
 // flatten 
