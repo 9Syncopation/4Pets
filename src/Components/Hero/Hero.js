@@ -5,7 +5,7 @@ export default function Hero({ children }) {
   return (
     <div className="hero">
       <div className="banner">
-        <h1> Care, Adopt & Connect</h1>
+        <h1> Care,!!!!!!!!!!!!!! Adopt & Connect</h1>
         <p>Embrace Your best friend</p>
         {children}
       </div>

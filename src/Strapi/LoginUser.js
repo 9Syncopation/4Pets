@@ -6,7 +6,7 @@ async function loginUser({email, password}){
         identifier:email,
         password
     })
-    // .then(response => {console.log('repone login', response)})
+    // .then(response => {console.log('response login', response)})
     .catch(error => {console.log(error)})
     return response
 }
