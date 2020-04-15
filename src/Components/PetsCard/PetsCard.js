@@ -30,21 +30,27 @@ export default function PetsCard({ image, name, gender, id, description }) {
   return (
 
     <Card className={classes.root}>
+    
     <CardActionArea>
-      <CardMedia
-        className={classes.media}
-        image={url}
-        title={name}
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="h2">
-        {name}
-        </Typography>
-        <p> {gender} </p>
-        <Typography variant="body2" color="textSecondary" component="p">
-        {description}
-        </Typography>
-      </CardContent>
+    <Link
+          to={`SinglePetPage/${id}`}
+          >
+          <CardMedia
+          
+          className={classes.media}
+          image={url}
+          title={name}
+          />
+          <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+          {name}
+          </Typography>
+          <p> {gender} </p>
+          <Typography variant="body2" color="textSecondary" component="p">
+          {description}
+          </Typography>
+          </CardContent>
+          </Link>
     </CardActionArea>
     <CardActions className="space-between">
       <Button size="small" color="primary">

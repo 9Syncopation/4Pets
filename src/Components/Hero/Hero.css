@@ -13,3 +13,9 @@
     padding-top: 30px;
     
 }
+
+@media screen and (max-width: 750px){
+    .hero{ 
+        height: 66vh;
+    }
+}
