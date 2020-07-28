@@ -1,6 +1,7 @@
 .logo{
     width: 100px;
-    height: 100px;
+	height: 100px;
+	cursor: pointer;
 }
 
 .header{
@@ -16,6 +17,21 @@ nav{
     flex-direction: row;
     justify-content: space-between; 
     align-items: flex-end; */
+}
+nav a{
+	padding: 10px;
+	margin: 0 5px;
+	font-size: 16px;
+	display: inline-block;
+	text-align: center;
+	color: darkolivegreen;
+	box-shadow: -7px -7px 20px 0 rgba(255,255,255,0.7), 7px 7px 20px 0 rgba(0,0,0,0.2);
+}
+nav a:hover{
+	color: rgb(111, 124, 89);
+	text-decoration: none;
+	cursor: pointer;
+	box-shadow: inset -7px -7px 20px 0 rgba(255,255,255,0.7), inset 7px 7px 20px 0 rgba(0,0,0,0.2);
 }
 .navHeader ul {
     list-style: none;
@@ -41,11 +57,13 @@ nav{
         transition: 300ms ease all;
         z-index: 1;
         margin-top: 50px;
-        background-color: darkblue;
-    } 
+        background-color: rgb(170, 170, 212);
+		
+	} 
+	
     .main-menu li {
         margin-top: 15px;
-        margin-bottom: 15px;
+		margin-bottom: 15px;
     }
 
     .main-menu.active {

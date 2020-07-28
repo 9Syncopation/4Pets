@@ -20,22 +20,22 @@ export default function Header() {
           <div className={"main-menu " + (navOpen ? 'active' : '')} >
             <div>
               <li>
-                <Link to="/"> Home |</Link> 
+                <Link to="/"> Home</Link> 
               </li>
             </div>
             <div>
               <li>
-                <Link to="/About"> About |</Link>
+                <Link to="/About"> About</Link>
               </li>
             </div>
             <div>
               <li>
-                <Link to="/PetsPage"> All Pets |</Link>
+                <Link to="/PetsPage"> All Pets</Link>
               </li>
             </div>
             <div>
               <li>
-                <Link to="/UserPets"> My Pets |</Link>
+                <Link to="/UserPets"> My Pets</Link>
               </li>
             </div>
 

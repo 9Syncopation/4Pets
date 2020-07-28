@@ -170,11 +170,11 @@ Header
   align-items: center;
 }
 .header a {
-  text-transform: capitalize;
-  margin: 0 0.25rem;
-  font-size: 1.3rem;
-  letter-spacing: 2px;
-  transition: var(--mainTransition);
+  /* text-transform: capitalize; */
+  /* margin: 0 0.25rem;
+  font-size: 1.3rem; */
+  /* letter-spacing: 2px; */
+  /* transition: var(--mainTransition); */
 }
 .header a:hover {
   color: var(--primaryColor);
@@ -202,7 +202,7 @@ Hero
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--primaryDarkColor);
+  color:#4b7fb7;
 }
 .banner {
   width: var(--smallWidth);
@@ -227,7 +227,7 @@ Hero
   background: var(--primaryDarkColor);
   border-color: var(--primaryDarkColor);
   color: var(--mainBlack);
-  background-color:rgba(214, 114, 47, 0.16) !important;
+  background-color:rgba(94, 51, 23, 0.16) !important;
   margin: 5px;
   
 }

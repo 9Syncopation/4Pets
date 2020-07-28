@@ -13,11 +13,13 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+	maxWidth: 345,
+	
   },
   media: {
     height: 140,
   },
+  
 });
 
 export default function PetsCard({ image, name, gender, id, description }) {
@@ -29,15 +31,15 @@ export default function PetsCard({ image, name, gender, id, description }) {
   
   return (
 
-    <Card className={classes.root}>
+    <div className="cards-neo">
     
-    <CardActionArea>
+    
     <Link
           to={`SinglePetPage/${id}`}
           >
           <CardMedia
           
-          className={classes.media}
+          className="img-card"
           image={url}
           title={name}
           />
@@ -51,17 +53,17 @@ export default function PetsCard({ image, name, gender, id, description }) {
           </Typography>
           </CardContent>
           </Link>
-    </CardActionArea>
+    
     <CardActions className="space-between">
-      <Button size="small" color="primary">
+      <Button size="small" color="primary" className="btn-neo">
         Share
       </Button>
-      <Button size="small" color="primary">
+      <Button size="small" color="primary" className="btn-neo">
       <Link
           to={`SinglePetPage/${id}`}
           > Details</Link>
       </Button>
     </CardActions>
-  </Card>
+  </div>
  );
 }
