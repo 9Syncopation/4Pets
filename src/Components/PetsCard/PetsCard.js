@@ -37,8 +37,10 @@ export default function PetsCard({ image, name, gender, id, description }) {
       <div className="image-details">
 	  
 	  <Typography gutterBottom variant="h5" component="h2">
-	  {name}
 	  </Typography>
+	  <h6>
+	  {name}
+	  </h6>
 	  <p> {gender} </p>
 	  </div>
 	  
