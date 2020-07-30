@@ -649,10 +649,10 @@ Checkout
 }
 
 .card-element {
-  border: 2px solid var(--darkGrey);
+  /* border: 2px solid var(--darkGrey); */
   padding: 0.5rem;
   font-size: 4rem;
-  border-radius: var(--mainBorderRadius);
+  /* border-radius: var(--mainBorderRadius); */
 }
 
 .checkout-form .form-empty {

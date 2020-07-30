@@ -1,73 +1,4 @@
 
-.card{
-	list-style: none;
-	position: relative;
-  }
-  
-  .card:before{
-	content: '';
-	display: block;
-	padding-bottom: 150%;
-	width: 100%;
-  }
-  
-  .card__background{
-	background-size: cover;
-	background-position: center;
-	border-radius: 24px;
-	bottom: 0;
-	filter: brightness(0.75) saturate(1.2) contrast(0.85);
-	left: 0;
-	position: absolute;
-	right: 0;
-	top: 0;
-	transform-origin: center;
-	transform: scale(1) translateZ(0);
-	transition: 
-	  filter 200ms linear,
-	  transform 200ms linear;
-  }
-  
-  .card:hover .card__background{
-	transform: scale(1.05) translateZ(0);
-  }
-  
-  /* TODO: heck the blur effect fron not hove cards at the grid */
-  .my-masonry-grid:hover > .card:not(:hover) .card__background{
-	filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
-  }
-  
-  .card__content{
-	left: 0;
-	padding: 24px 24px 10px 24px;
-	position: absolute;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	
-  }
-  
-  .card__category{
-	color: rgba(255,255,255,0.6);
-	font-size: 1.2rem;
-	font-weight:600;
-	margin-bottom: 8px;
-	text-transform: uppercase;
-  }
-  
-  .card__heading{
-	color: rgba(255,255,255,0.9);
-	font-size: 0.8rem;
-	text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
-	line-height: 1.4;
-	word-spacing: 100vw;
-  }
-
-
-/* ///////////////////////////////////////////////////////////////// */
 .products-center *{
 }
 
@@ -96,16 +27,16 @@
 }
 .cards-neo{
 	border-radius: 51px;
-	/* box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.2),
-    -8px -8px 18px 0 rgba(255, 255, 255, 0.55); */
+	box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.2),
+    -8px -8px 18px 0 rgba(255, 255, 255, 0.55);
 	padding: 5px;
 	position: relative;
 	color: black;
 }
-.cards-neo :hover{
+.cards-neo:hover{
 	/* box-shadow: inset -6px -6px 20px rgba(255,255,255,0.5), inset 6px 6px 20px rgba(0,0,0,0.05); */
-	/* box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
-    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5); */
+	box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
 }
 .cards-neo:hover *{
 	text-decoration: none;
@@ -153,9 +84,8 @@
 				 padding: 0 15px !important;
 				 margin-bottom: 0 !important;
 			 }
-.card-actions *{
-	font-weight: 800;
-	/* padding: 0 15px !important; */
+.card-actions{
+	padding: 0 15px !important;
 	}
 
 /******* helpers *******/

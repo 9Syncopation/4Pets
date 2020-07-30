@@ -33,7 +33,7 @@ export default function SinglePetPage() {
                         //go to transaction, details, agreement
                         history.push('/CartPage')
                     }
-                }>Adopt//Support </button>
+                }>Adopt</button>
                 </article>
             </section>
             )

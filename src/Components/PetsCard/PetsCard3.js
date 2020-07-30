@@ -13,9 +13,6 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import Favorite from "@material-ui/icons/Favorite";
 import FavoriteBorder from "@material-ui/icons/FavoriteBorder";
-import FavoriteBorderTwoToneIcon from '@material-ui/icons/FavoriteBorderTwoTone';
-import Masonry from "react-masonry-css";
-
 
 const useStyles = makeStyles({
   root: {
@@ -36,42 +33,34 @@ export default function PetsCard({ image, name, gender, id, description }) {
   return (
 	  
 	  <div className="cards-neo">
-	  <a class="card" href="#">
-      <div class="card__background" style={{backgroundImage: `url(${url})`}}></div>
-	  <div class="card__content">
-	  <div>
-	  <p class="card__category">{name}</p>
-	  <h3 class="card__heading">{gender}</h3>
-	  </div>
-	  <CardActions className="card-actions space-between">
-	  <FormControlLabel
-	  control={
-		  <Checkbox
-			icon={<FavoriteBorder />}
-			checkedIcon={<Favorite />}
-			name="checkedH"
-			/>
-		}
-		/>
-		
-		{ /*<Button size="small" color="primary" className="btn-neo">
-		Share
-	  </Button>*/}
-		  <Button size="small" color="primary" className="btn-neo">
-		  <Link to={`SinglePetPage/${id}`}> Adopt</Link>
-		  </Button>
-		  </CardActions>
-      </div>
-    </a>
-
-
-
-
-
-
-
-      
+      <CardMedia className="img-card" image={url} title={name} />
+      <div className="image-details">
 	  
+	  <Typography gutterBottom variant="h5" component="h2">
+	  </Typography>
+	  <h6>
+	  {name}
+	  </h6>
+	  <p> {gender} </p>
+	  </div>
+	  
+	  <CardActions className="card-actions space-between">
+	  { /*<Button size="small" color="primary" className="btn-neo">
+	  Share
+	</Button>*/}
+	<FormControlLabel
+	control={
+		<Checkbox
+		  icon={<FavoriteBorder />}
+		  checkedIcon={<Favorite />}
+		  name="checkedH"
+		  />
+	  }
+	  />
+        <Button size="small" color="primary" className="btn-neo">
+		<Link to={`SinglePetPage/${id}`}> Details</Link>
+        </Button>
+		</CardActions>
 		</div>
 		
 		);
