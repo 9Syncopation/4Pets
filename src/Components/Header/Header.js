@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
-import logo from "../../Assets/Img/Logo/4.jpg";
+import logo from "../../Assets/Img/Logo/The DailyAdoption.png";
 import CartLink from "../CartLink";
 import {UserContext} from "../../Context/UserContext";
 import LoginLink from "../LoginLink";

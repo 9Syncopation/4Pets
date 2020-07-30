@@ -1,21 +1,21 @@
 
 .products-center *{
-	color: black;
 }
 
 
 .card-title{
-    font-size: 20px;
+	font-size: 20px;
     font-family: montBold,sans-serif;
     margin: 5px;
     padding: 0;
 }
 
-.card {
-    margin: 10px;
+.cards {
+	margin: 10px;
     cursor: pointer;
     border-radius: 5%;
 	font-family: montLight,sans-serif;
+	color: teal;
 	
 	
 }
@@ -29,6 +29,8 @@
 	box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.2),
     -8px -8px 18px 0 rgba(255, 255, 255, 0.55);
 	padding: 15px;
+	position: relative;
+	color: black;
 }
 .cards-neo:hover{
 	/* box-shadow: inset -6px -6px 20px rgba(255,255,255,0.5), inset 6px 6px 20px rgba(0,0,0,0.05); */
@@ -63,6 +65,28 @@
 	color: black;
 	
 }
+.image-details{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	top: 110px;
+	left: 20px;
+	width: 80%;
+	color :rgb(92, 82, 82) ;
+	
+	/* background-color: rgba(170, 155, 155, 0.212); */
+	/* border-radius: 0%; */
+}
+.image-details > h2 + p {
+	font-weight: 800;		
+				 padding: 0 15px !important;
+				 margin-bottom: 0 !important;
+			 }
+.card-actions{
+	padding: 0 15px !important;
+	}
+
 /******* helpers *******/
 
 /* //Flex Helpers */

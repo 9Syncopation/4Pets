@@ -1,8 +1,10 @@
 .hero{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Img/Hero/2.jpg");
-    background-position: center;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.thevetconnection.com.au/wp-content/uploads/2018/05/dogcats-min.png"); */
+    /* background-image: url("https://library.kissclipart.com/20180902/ryq/kissclipart-group-of-dogs-clipart-puppy-cat-border-collie-f372f7e4e77e577b.jpg"); */
+    background-image: url('../../Assets/Img/Hero/kissclipart-group-of-dogs-clipart-puppy-cat-border-collie-c4b6f329f5e07e5b.png');
+    background-position: bottom;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     position: relative;
     height: 100vh;
 }
@@ -16,6 +18,6 @@
 
 @media screen and (max-width: 750px){
     .hero{ 
-        height: 66vh;
+        height: 44vh;
     }
 }
