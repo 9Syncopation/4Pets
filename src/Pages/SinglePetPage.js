@@ -4,6 +4,7 @@ import {PetsContext} from '../Context/PetsContext'
 import {CartContext} from '../Context/CartContext'
 import {useHistory} from 'react-router-dom'
 import Loading from '../Components/Loading/Loading';
+import "./SinglePetPage.css"
 
 export default function SinglePetPage() {
     const {id} = useParams();
@@ -21,10 +22,12 @@ export default function SinglePetPage() {
         return (
             <section className="single-product">
         {/* <img src={image} alt={name} className="single-product-image"/>*/}
-                <img src={image} alt={name} className="single-product-image"/>
-                <article>
-                <h1> {name}</h1>
-                <h3> {gender}</h3>
+                <img src={image} alt={name} className="single-product-image1"/>
+                <article className="user-profile__name">
+                <p> {name}</p>
+				<span> {gender}</span>
+				</article>
+				<article className="user-profile_description">
                 <h6> {description}</h6>
                 <h3><strong>Our Shelter:</strong></h3><p>{shelterDescription}</p>
                 <button className="btn btn-primary btn-block" onClick ={
