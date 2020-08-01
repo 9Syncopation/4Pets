@@ -9,6 +9,7 @@
   --mainBlack: #222;
   --mainTransition: all 0.3s eas-in-out;
   --mainSpacing: 0.3rem;
+  
 }
 
 .text-title {
@@ -25,7 +26,9 @@
 
 body{
   font-family: "open Sans", sans-serif;
-  background: var(--mainGrey) !important;
+  /* background: var(--mainGrey) !important; */
   color: var(--mainBlack);
+  background: linear-gradient(0deg, rgba(198,211,216,1) 96%, rgba(30,53,81,1) 118%);
+
 
 }

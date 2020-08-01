@@ -1,23 +1,30 @@
-import React from "react";
+import React , {useContext} from 'react';
+import {PetsContext} from '../Context/PetsContext';
 import Hero from "../Components/Hero/Hero";
 import { Link } from "react-router-dom";
 import UsersPets from "../Components/FeaturedPets/UsersPets";
+import PetsPage from "../Pages/PetsPage";
+import PetsList from "../Components/PetsList/PetsList";
 
 export default function HomePage() {
+	const {loading, pets} = React.useContext(PetsContext)
   return (
     <>
       <Hero>
-        <Link to="PetsPage" className="btn btn-hero">
-          {" "}
-          Find Your loved Cat
-        </Link>
-        <br/>
-        <Link to="PetsPage" className="btn btn-hero">
-          {" "}
-          More Of a Dog Person?
-        </Link>
-      </Hero>
+        <div className="display-flex row space-evenly">
+          <Link to="PetsPage" className="btn btn-hero">
+            {" "}
+            Cat
+          </Link>
+          <br />
+          <Link to="PetsPage" className="btn btn-hero">
+            {" "}
+            Dog
+          </Link>
+        </div>
+	  </Hero>
       <UsersPets></UsersPets>
+	  <PetsList title = 'Our Lovely Cats' pets ={pets}></PetsList>
     </>
   );
 }
