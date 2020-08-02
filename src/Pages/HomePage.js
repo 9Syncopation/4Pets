@@ -23,8 +23,8 @@ export default function HomePage() {
           </Link>
         </div>
 	  </Hero>
-      <UsersPets></UsersPets>
 	  <PetsList title = 'Our Lovely Cats' pets ={pets}></PetsList>
+      <UsersPets></UsersPets>
     </>
   );
 }

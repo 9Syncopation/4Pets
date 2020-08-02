@@ -1,7 +1,7 @@
 import React from "react";
 import { PetsContext } from "../Context/PetsContext";
 import Loading from "../Components/Loading/Loading";
-import AchievementBoard from "../Assets/Img/Views/ladder-of-trust.png"
+import AchievementBoard from "../Assets/Img/Views/pngfind.com-pokemon-go-icon-png-4968932.png"
 import "./UserPets.css";
 
 export default function UserPets() {
@@ -31,8 +31,8 @@ export default function UserPets() {
 		</article>
 		<div>
 		<h1>Well done!!</h1>
-		<div>
 		</div>
+		<div className="img-achievement">
 		<img src={AchievementBoard} />
 		</div>
       </section>
