@@ -17,12 +17,12 @@ export default function UserPets() {
     console.log("UserPets -> name", name);
     return (
       <section className="user-page">
-		<h1> Hello from UserPets</h1>
+		<h1> Follow your pets</h1>
 		<article className="user-pets-profile">
 		
 		
         <article className="pet-profile-name">
-          <p> {name}</p>
+          <p> Chuckwalla</p>
         </article>
 		
 		<div>
@@ -30,7 +30,7 @@ export default function UserPets() {
 		</div>
 		</article>
 		<div>
-		<h1>Well done!!</h1>
+		<h1>Achievements</h1>
 		</div>
 		<div className="img-achievement">
 		<img src={AchievementBoard} />

@@ -209,14 +209,17 @@ Hero
   max-width: var(--fullWidth);
 }
 .hero h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: capitalize;
+  margin-top: 30px;
 }
 .hero p {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: bold;
   letter-spacing: 3px;
   margin-bottom: 0.5rem;
+  text-align: center;
+  margin-top:30px;
   /* margin-bottom: 1.75rem; */
 }
 .hero .btn{
@@ -236,6 +239,7 @@ box-shadow: -2px -1px 3px 0 rgba(255,255,255,0.7), 7px 7px 20px 0 rgba(0,0,0,0.2
   color: var(--mainBlack);
   background-color:rgba(94, 51, 23, 0.16) !important;
   margin: 5px;
+  background-color: #fff8d2 !important;
    
 }
 .btn-hero:hover {
@@ -433,6 +437,7 @@ Cart
   margin-bottom: 2rem;
   text-align: center;
   text-transform: capitalize;
+  margin-top: 2rem;
 }
 .cart-item {
   display: grid;

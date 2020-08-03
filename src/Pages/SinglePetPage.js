@@ -41,7 +41,7 @@ export default function SinglePetPage() {
 		  </div>
 		  <div className="badge-action">
 		  
-		  Adopt to earn your first Badge!!
+		  Adopt me and start your experience!!
 		  <img src={AwardAction} alt="award "/>
 		  
 		  </div>

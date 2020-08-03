@@ -29,8 +29,8 @@ function App() {
   return (
     <>
       <Header />
-      <Alert/>
-      
+      <Alert />
+
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/About" component={About} />

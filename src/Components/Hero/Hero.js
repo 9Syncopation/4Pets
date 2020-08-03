@@ -9,7 +9,7 @@ export default function Hero({ children }) {
 	data-aos-offset="700"
 	data-aos-easing="ease-in-sine" className="banner">
 	<h1> Care, Adopt & Connect</h1>
-	<p>What kind of a person are you?</p>
+	<p>Are you?</p>
 	{children}
 	</div>
 	
