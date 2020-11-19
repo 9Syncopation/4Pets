@@ -5,7 +5,6 @@ import { UsersPets } from "../Utils/UsersPetsHelper";
 import { flattenPets } from "../Utils/ApiCats";
 
 export const PetsContext = React.createContext();
-
 //Provider, Consumer, useContext()
 
 //useEffect();
@@ -13,7 +12,7 @@ export const PetsContext = React.createContext();
 //by default runs after every render
 // cb as first parameter
 //return cleanup function to avoid memory leaks so cannot be async
-//second argument - arry of values (dependencies)
+//second argument - array of values (dependencies)
 //
 export default function PetsProvider({ children }) {
   const [loading, setLoading] = React.useState(false);

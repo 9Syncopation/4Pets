@@ -33,17 +33,23 @@ function UserProvider({ children }) {
     msg: "hellow",
     type: "danger",
   });
-
   const showAlert = ({ msg, type = "success" }) => {
     setAlert({ show: true, msg, type });
   };
   const hideAlert = () => {
     setAlert({ ...alert, show: false });
   };
-
   return (
     <UserContext.Provider
-      value={{ user, userLogin, userLogout, alert, showAlert, hideAlert,height }}
+      value={{
+        user,
+        userLogin,
+        userLogout,
+        alert,
+        showAlert,
+        hideAlert,
+        height,
+      }}
     >
       {children}
     </UserContext.Provider>

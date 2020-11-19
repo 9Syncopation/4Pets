@@ -30,8 +30,8 @@ function App() {
   return (
     <>
       <Header />
-      <Alert/>
-      <ScrollButton/>
+      <Alert />
+      <ScrollButton />
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/About" component={About} />
