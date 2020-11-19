@@ -15,6 +15,7 @@ import Login from "./Pages/LoginPage";
 import Error from "./Pages/Error";
 import Cart from "./Pages/CartPage";
 import Checkout from "./Pages/CheckoutPage";
+import ScrollButton from "./Components/ScrollButton";
 
 //Components
 import Header from "./Components/Header/Header";
@@ -30,7 +31,7 @@ function App() {
     <>
       <Header />
       <Alert/>
-      
+      <ScrollButton/>
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/About" component={About} />
