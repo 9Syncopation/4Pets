@@ -21,10 +21,10 @@ import ScrollButton from "./Components/ScrollButton";
 import Header from "./Components/Header/Header";
 import Alert from "./Components/Alert";
 import PrivateRoute from "./Components/PrivateRoute";
-import Navbar from "./Components/Navbar";
-import Sidebar from "./Components/Sidebar";
-import SideUserPets from "./Components/SideUserPets";
-import Footer from "./Components/Footer";
+// import Navbar from "./Components/Navbar";
+// import Sidebar from "./Components/Sidebar";
+// import SideUserPets from "./Components/SideUserPets";
+// import Footer from "./Components/Footer";
 
 function App() {
   return (

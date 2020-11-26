@@ -1,5 +1,7 @@
 import React from "react";
-import { faWindowClose, FaWindowClose } from "react-icons/fa";
+import { 
+  // faWindowClose,
+   FaWindowClose } from "react-icons/fa";
 import { UserContext } from "../Context/UserContext";
 
 export default function Alert() {
