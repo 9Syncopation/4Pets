@@ -10,7 +10,7 @@ import "./Header.css";
 export default function Header() {
   const {user} = React.useContext(UserContext)
   const [navOpen, setNavOpen] = useState(0)
-  console.log("navOPEN", navOpen);
+  // console.log("navOPEN", navOpen);
   
   return (
     <header className="header">
