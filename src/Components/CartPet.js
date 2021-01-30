@@ -1,5 +1,5 @@
 import React from 'react'
-import {FaAngleUp, FaAngleDown} from 'react-icons/fa'
+// import {FaAngleUp, FaAngleDown} from 'react-icons/fa'
 import {CartContext} from '../Context/CartContext'
 import '../Components/CartPet.css'
 
@@ -11,7 +11,9 @@ export default function CartPet({id, image, name, gender, amount}) {
     //cart context
    /*TODO change the items and the cart to adoped bought pets*/
     /*TODO change to wish list or follow pets*/
-    const {removeItem, increaseAmount, decreaseAmount} = React.useContext(CartContext)
+    const {removeItem,
+      //  increaseAmount, decreaseAmount
+      } = React.useContext(CartContext)
     return(      
     <article className="cart-item ">
            <img src ={image} alt= {name} className="cart-image"/>

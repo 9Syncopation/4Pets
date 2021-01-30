@@ -10,7 +10,9 @@ export default function UserPets() {
   if (pets.length === 0) {
     return <Loading />;
   } else {
-    const { image, name, gender, description, shelterDescription } = pet;
+    const { image, name,
+      //  gender, description, shelterDescription
+       } = pet;
     
     return (
       <section className="user-page">
@@ -30,7 +32,7 @@ export default function UserPets() {
 		<h1>Achievements</h1>
 		</div>
 		<div className="img-achievement">
-    <img src={AchievementBoard} />
+    <img src={AchievementBoard} alt ="achievements board" />
 		</div>
       </section>
       );

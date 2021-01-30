@@ -1,18 +1,18 @@
-import React, { useContext } from "react";
-import { PetsContext } from "../Context/PetsContext";
+import React from "react";
+// import { PetsContext } from "../Context/PetsContext";
 import Hero from "../Components/Hero/Hero";
 import { Link } from "react-router-dom";
-import UsersPets from "../Components/FeaturedPets/UsersPets";
-import PetsPage from "../Pages/PetsPage";
-import PetsList from "../Components/PetsList/PetsList";
-import CatClipArt from "../Assets/Img/Views/cat.png";
-import DogClipArt from "../Assets/Img/Views/dogclipart.png";
+// import UsersPets from "../Components/FeaturedPets/UsersPets";
+// import PetsPage from "../Pages/PetsPage";
+// import PetsList from "../Components/PetsList/PetsList";
+// import CatClipArt from "../Assets/Img/Views/cat.png";
+// import DogClipArt from "../Assets/Img/Views/dogclipart.png";
 // import Parallax from "../Components/Parallax"
-
 import "./HomePage.css";
 
+
 export default function HomePage() {
-  const { loading, pets } = React.useContext(PetsContext);
+  // const { loading, pets } = React.useContext(PetsContext);
   return (
     <>
       <Hero>
@@ -20,7 +20,7 @@ export default function HomePage() {
           data-aos="zoom-in-down"
           data-aos-easing="ease-in-sine"
           data-aos-delay="500"
-          className="person-lover display-flex column  space-evenly"
+          className="person-lover display-flex  space-evenly"
         >
           <div className=" display-flex column ">
             <Link to="PetsPage" className="btn btn-hero">
@@ -43,5 +43,4 @@ export default function HomePage() {
   );
 }
 
-// <PetsList title = 'Our Lovely Cats' pets ={pets}></PetsList>
-// <UsersPets></UsersPets>
+

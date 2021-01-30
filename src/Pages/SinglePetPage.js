@@ -18,7 +18,9 @@ export default function SinglePetPage() {
   if (pets.length === 0) {
     return <Loading />;
   } else {
-    const { image, name, gender, description, shelterDescription } = pet;
+    const { image, name,
+      //  gender, description, shelterDescription 
+      } = pet;
 
     return (
       <section className="single-product">
