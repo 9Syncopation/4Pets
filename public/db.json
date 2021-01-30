@@ -8,7 +8,7 @@
   "image": "./Cats/1.jpg"
 }, {
   "id": 2,
-  "name": "Woolly-necked",
+  "name": "Woolly",
   "gender": "Female",
   "shelterDescription": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.",
   "userspets": true,

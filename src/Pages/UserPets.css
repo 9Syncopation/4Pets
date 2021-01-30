@@ -1,5 +1,5 @@
 .user-page{
-	width: 90%;
+	max-width: 90%;
 	text-align: center;
 	margin:auto
 }
@@ -32,4 +32,16 @@
 }
 .img-achievement{
 	margin-bottom: 25px;
+}
+
+@media (min-width: 550px) {
+	.user-page{
+		max-width: 60%;
+		text-align: center;
+		margin:auto
+	}
+	img {
+		width: 70%;
+		display: block;
+		}
 }

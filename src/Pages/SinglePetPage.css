@@ -1,7 +1,7 @@
 
 
 .single-product{
-	width:80%;
+	width:80vw;
 	margin: auto;
 	margin-top: 10px;
 	position: relative;
@@ -11,7 +11,7 @@
 	-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
 	clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 	  /* opacity: 0.4; */
-	  height: 150px;
+	  /* height: 150px; */
 	  /* margin: 10px; */
 	  width: 60%;
 	  margin: auto;

@@ -4,6 +4,12 @@ import Masonry from "react-masonry-css";
 import "./PetsList.css"
 
 export default function PetsList({ title, pets }) {
+	const breakpointColumnsObj = {
+		default: 4,
+		1100: 3,
+		700: 2,
+		500: 1
+	  };
   return (
 	  <section data-aos="fade-right"
 	  data-aos-offset="300"
@@ -20,7 +26,7 @@ export default function PetsList({ title, pets }) {
 	  data-aos-delay="50"
 	  data-aos-easing="ease-in-sine"
 	  data-aos-anchor=".other-element"
-      breakpointCols={2}
+      breakpointCols={breakpointColumnsObj}
       className="my-masonry-grid"
       columnClassName="my-masonry-grid_column"
 	  >

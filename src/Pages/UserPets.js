@@ -19,7 +19,7 @@ export default function UserPets() {
 		
 		
         <article className="pet-profile-name">
-          <p> Chuckwalla</p>
+          <p> {name}</p>
         </article>
 		
 		<div>
@@ -30,9 +30,11 @@ export default function UserPets() {
 		<h1>Achievements</h1>
 		</div>
 		<div className="img-achievement">
-		<img src={AchievementBoard} />
+    <img src={AchievementBoard} />
 		</div>
       </section>
-    );
+      );
+    }
   }
-}
+  
+  // TODO make the achievments as icons

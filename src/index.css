@@ -413,11 +413,11 @@ Single Product
   letter-spacing: 1px;
 }
 @media screen and (min-width: 992px) {
-  .single-product {
+  /* .single-product {
     display: grid;
     grid-template-columns: 2fr 3fr;
     column-gap: 3rem;
-  }
+  } */
 }
 /* 
 ====== 
@@ -513,7 +513,7 @@ Login Form
 }
 .login-form,
 .checkout-form {
-  background: var(--mainWhite);
+  background: #ffffff75;
   padding: 1.25rem 1rem;
   text-transform: capitalize;
   border-radius: var(--mainBorderRadius);

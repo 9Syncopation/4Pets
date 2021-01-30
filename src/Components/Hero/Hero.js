@@ -6,7 +6,7 @@ export default function Hero({ children }) {
 	<div className="hero">
 	
 	<div data-aos="zoom-in-down"
-	data-aos-offset="700"
+	data-aos-offset="300"
 	data-aos-easing="ease-in-sine" className="banner">
 	<h1> Care, Adopt & Connect</h1>
 	<p>Are you?</p>
