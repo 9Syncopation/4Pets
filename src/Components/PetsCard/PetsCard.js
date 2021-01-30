@@ -34,16 +34,14 @@ export default function PetsCard({
   name,
   gender,
   id,
-  UsersPets,
+  userspets,
   description,
 }) {
-  console.log("PetsCard -> usersPets", UsersPets);
   const classes = useStyles();
 
   //TODO set up the card property - like, viewed etc.
   const url = image;
-  console.log("image extraction", image);
-
+  
   return (
     <div className="cards-neo">
       <a class="card" href="#">
@@ -70,7 +68,7 @@ export default function PetsCard({
             {/*<Button size="small" color="primary" className="btn-neo">
 		Share
 	  </Button>*/}
-            {UsersPets ? (
+            {userspets ? (
               <Button size="small" color="primary" className="btn-neo adopted">
                 <Link to={`SinglePetPage/${id}`}> Adopted</Link>
               </Button>

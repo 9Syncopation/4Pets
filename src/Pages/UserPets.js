@@ -6,15 +6,12 @@ import "./UserPets.css";
 
 export default function UserPets() {
   const { pets } = React.useContext(PetsContext);
-  const pet = pets.find((item) => item.UsersPets === true);
+  const pet = pets.find((item) => item.userspets === true);
   if (pets.length === 0) {
     return <Loading />;
   } else {
     const { image, name, gender, description, shelterDescription } = pet;
-    console.log("UserPets -> image", image);
-    console.log("pets", pets);
-
-    console.log("UserPets -> name", name);
+    
     return (
       <section className="user-page">
 		<h1> Follow your pets</h1>

@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import {url} from '../Utils/ApiCats'
+// import {url} from '../Utils/ApiCats'
 import {UsersPets} from '../Utils/UsersPetsHelper'
 import {flattenPets} from '../Utils/ApiCats'
 
@@ -25,13 +25,12 @@ export default function PetsProvider({children}) {
 React.useEffect(() => {
     setLoading(true);
 //TODO change this to PetsPage 
-    axios.get(`${url}/pets`)
+    // axios.get(`${url}/pets`)
+    axios.get('db.json')
     .then(response => {
-        console.log('pets response', response);
         const usersOwnedPets = UsersPets(flattenPets(response.data));
         const pets = flattenPets(response.data)
-        console.log('flattenPets', response.data);
-        console.log('Pets flattenPets', pets);
+      
         
         setPets(pets)
         setUsersPets(usersOwnedPets)

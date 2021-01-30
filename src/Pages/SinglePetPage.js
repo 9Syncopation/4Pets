@@ -19,12 +19,11 @@ export default function SinglePetPage() {
     return <Loading />;
   } else {
     const { image, name, gender, description, shelterDescription } = pet;
-    console.log("strapi pets", pet);
 
     return (
       <section className="single-product">
         {/* <img src={image} alt={name} className="single-product-image"/>*/}
-        <img src={image} alt={name} className="single-product-image1" />
+        <img src={`/${image}`} alt={name} className="single-product-image1" />
         <div className="user-profile__name">
           <p>Hi ,I am {name}</p>
 		  </div>

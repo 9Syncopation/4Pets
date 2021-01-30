@@ -7,7 +7,6 @@ import "./PetsPage.css";
 
 export default function PetsPage() {
    const {loading, pets} = React.useContext(PetsContext)
-   console.log('Pets Products', pets );
    if (loading) {
 	   return <Loading></Loading>
 	}
