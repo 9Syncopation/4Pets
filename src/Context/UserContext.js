@@ -1,42 +1,58 @@
-import React from 'react'
+import React from "react";
 
-const UserContext = React.createContext()
-function getUserFromLocalStorage(){
-    return localStorage.getItem('user')
-    ? JSON.parse(localStorage.getItem('user'))
-    : {user: null ,token:null}
+const UserContext = React.createContext();
+function getUserFromLocalStorage() {
+  return localStorage.getItem("user")
+    ? JSON.parse(localStorage.getItem("user"))
+    : { user: null, token: null };
 }
-function UserProvider({children}){
-    // const [user, setUser] = React.useState({username: null , token: null})
-        const [user, setUser] = React.useState(getUserFromLocalStorage())
+function UserProvider({ children }) {
+  // const [user, setUser] = React.useState({username: null , token: null})
+  const [user, setUser] = React.useState(getUserFromLocalStorage());
+  const [height, setHeight] = React.useState(0);
 
-
-    const userLogin = user => {
-        setUser(user)
-        localStorage.setItem('user', JSON.stringify(user))
-        console.log(('user local storage', user));
-        
-    }
-    const userLogout = () => {
-        setUser({username: null, token: null})
-        localStorage.removeItem("user")
-    }
-    //TODO setup alert context
-    const [alert, setAlert] = React.useState({
-        show: false,
-        msg: "hellow",
-        type: "danger"
-    })
-
-    const showAlert =({msg, type ="success"}) => {
-        setAlert({show: true, msg, type})
-    }
-    const hideAlert = () => {
-        setAlert({...alert, show: false})
-    }
-
-    return <UserContext.Provider value={{user, userLogin, userLogout, alert, showAlert, hideAlert}}>
-     {children}
-     </UserContext.Provider>
+  React.useEffect(() => {
+    window.addEventListener("scroll", () => {
+      // console.log('Height', height)
+      setHeight(window.pageYOffset);
+    });
+    return () => window.removeEventListener("scroll", () => {});
+  });
+  const userLogin = (user) => {
+    setUser(user);
+    localStorage.setItem("user", JSON.stringify(user));
+    console.log(("user local storage", user));
+  };
+  const userLogout = () => {
+    setUser({ username: null, token: null });
+    localStorage.removeItem("user");
+  };
+  //TODO setup alert context
+  const [alert, setAlert] = React.useState({
+    show: false,
+    msg: "hellow",
+    type: "danger",
+  });
+  const showAlert = ({ msg, type = "success" }) => {
+    setAlert({ show: true, msg, type });
+  };
+  const hideAlert = () => {
+    setAlert({ ...alert, show: false });
+  };
+  return (
+    <UserContext.Provider
+      value={{
+        user,
+        userLogin,
+        userLogout,
+        alert,
+        showAlert,
+        hideAlert,
+        height,
+      }}
+    >
+      {children}
+    </UserContext.Provider>
+  );
 }
-export { UserContext, UserProvider }
+export { UserContext, UserProvider };

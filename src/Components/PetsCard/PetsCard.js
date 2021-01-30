@@ -83,3 +83,9 @@ export default function PetsCard({
     </div>
   );
 }
+// PetsCard.propTypes = {
+//   image: PropTypes.string.isRequired,
+//   name: PropTypes.string.isRequired,
+//   gender: PropTypes.string.isRequired,
+//   description: PropTypes.string.isRequired,
+// };

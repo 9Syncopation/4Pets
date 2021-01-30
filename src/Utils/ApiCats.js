@@ -1,10 +1,7 @@
-
-
 ///Url
-export  const url = "https://react-4pet-api.herokuapp.com"
+export const url = "https://react-4pet-api.herokuapp.com";
 
-
-// flatten 
+// flatten
 
 export function flattenPets (data){
     return data.map(item => {
