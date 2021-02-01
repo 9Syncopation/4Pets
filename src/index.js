@@ -8,6 +8,10 @@ import PetsProvider from "./Context/PetsContext";
 import {CartProvider} from './Context/CartContext'
 import {UserProvider} from './Context/UserContext'
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+
 ReactDOM.render(
   <UserProvider>
   <PetsProvider>

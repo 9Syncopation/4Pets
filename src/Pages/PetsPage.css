@@ -1,0 +1,8 @@
+.hero-pets-page{
+	background-image: url('../Assets/Img/Hero/kissclipart-group-of-dogs-clipart-puppy-cat-border-collie-c4b6f329f5e07e5b.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    height: 25vh;
+}

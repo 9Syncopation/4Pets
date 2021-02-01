@@ -31,7 +31,9 @@ function App() {
     <>
       <Header />
       <Alert />
+
       <ScrollButton />
+
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/About" component={About} />

@@ -1,0 +1,175 @@
+
+.products-center *{
+}
+
+
+.card-title{
+	font-size: 20px;
+    font-family: montBold,sans-serif;
+    margin: 5px;
+    padding: 0;
+}
+
+.cards {
+	margin: 10px;
+    cursor: pointer;
+    border-radius: 5%;
+	font-family: montLight,sans-serif;
+	color: teal;
+	
+	
+}
+.img-card{
+	width:100%;
+	height: 140px;
+	border-radius: 40px 40px 0 0 ;
+	
+}
+.cards-neo{
+	border-radius: 51px;
+	box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.2),
+    -8px -8px 18px 0 rgba(255, 255, 255, 0.55);
+	padding: 5px;
+	position: relative;
+	color: black;
+}
+.cards-neo:hover{
+	/* box-shadow: inset -6px -6px 20px rgba(255,255,255,0.5), inset 6px 6px 20px rgba(0,0,0,0.05); */
+	box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+}
+.cards-neo:hover *{
+	text-decoration: none;
+
+}
+
+.btn-neo{
+	
+	box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.2),
+    -12px -12px 24px 0 rgba(255, 255, 255, 0.5);
+  font-size: 5rem;
+  /* width: 200px;
+  height: 200px; */
+  border-radius: 40px;
+  overflow: hidden;
+  padding: 1.3rem;
+  display: flex;
+  
+}
+
+.btn-neo:hover{
+	box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+	inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+}
+.btn-neo a {
+	text-decoration: none;
+	color: black;
+	
+}
+.image-details{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	top: 110px;
+	left: 20px;
+	width: 80%;
+	color :rgb(92, 82, 82) ;
+	
+	/* background-color: rgba(170, 155, 155, 0.212); */
+	/* border-radius: 0%; */
+}
+.image-details > h2 + p {
+	font-weight: 800;		
+				 padding: 0 15px !important;
+				 margin-bottom: 0 !important;
+			 }
+.card-actions{
+	padding: 0 15px !important;
+	}
+
+/******* helpers *******/
+
+/* //Flex Helpers */
+.flex {
+    display: flex;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.center{
+    justify-content: center;
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+.space-evenly{
+    justify-content: space-evenly;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end{
+    justify-content:flex-end ;
+}
+
+
+.justify-start{
+    justify-content:flex-start ;
+}
+
+.align-start{
+    align-items: flex-start;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-end{
+    align-items: flex-end;
+}
+
+.wrap {
+	flex-wrap: wrap;
+}
+
+.no-wrap{
+    flex-wrap: nowrap;
+}
+
+/* //List Helpers */
+.clean-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.ellipsis{
+text-overflow: ellipsis;
+}
+
+
+/* // Aspect ratios */
+/* 
+.ratio-16-9 { @include aspect-ratio(100, 56); }
+
+.ratio-square { @include aspect-ratio(100, 100); }
+
+.ratio-card { @include aspect-ratio(100, 80); }
+
+.ratio-poster { @include aspect-ratio(100, 150); } */
