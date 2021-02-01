@@ -44,7 +44,7 @@ export default function PetsCard({
   
   return (
     <div className="cards-neo">
-      <a className="card" href="#">
+      <div className="card" >
         <div
           className="card__background"
           style={{ backgroundImage: `url(${url})` }}
@@ -79,7 +79,7 @@ export default function PetsCard({
             )}
           </CardActions>
         </div>
-      </a>
+      </div>
     </div>
   );
 }
