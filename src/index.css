@@ -267,7 +267,7 @@ Hero
   padding: 0.8rem 1.5rem;
   color: black !important;
   background: var(--primaryDarkColor);
-  border-color: var(--primaryDarkColor);
+  border-color: none !important;
   color: var(--mainBlack);
   background-color: rgba(94, 51, 23, 0.16) !important;
   margin: 5px;
