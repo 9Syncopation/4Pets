@@ -12,7 +12,7 @@
     "embla-carousel": "^3.0.22",
     "material-ui-icons": "^1.0.0-beta.36",
     "pure-react-carousel": "^1.27.1",
-    "axios": "^0.21.1",
+    "axios": "^1.6.0",
     "bootstrap": "^4.4.1",
     "cors": "^2.8.5",
     "nodemon": "^2.0.7",
